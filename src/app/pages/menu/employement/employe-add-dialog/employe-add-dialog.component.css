@@ -1,0 +1,8 @@
+.form-field-spacing {
+    display: block;
+    margin-bottom: 16px; /* Espace entre les champs */
+  }
+
+  .mat-form-field {
+    width: 100%; /* Assure que les champs occupent toute la largeur disponible */
+  }

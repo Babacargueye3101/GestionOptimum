@@ -1,0 +1,68 @@
+<h1 mat-dialog-title>Ajouter un Employé</h1>
+<div mat-dialog-content>
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="name" placeholder="Entrez le nom de l'employé">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Entrez l'email de l'employé">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Téléphone</mat-label>
+      <input matInput formControlName="phone" placeholder="Entrez le numéro de téléphone">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Adresse</mat-label>
+      <input matInput formControlName="address" placeholder="Entrez l'adresse">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Date de naissance</mat-label>
+      <input matInput [matDatepicker]="birthDatePicker" formControlName="birthdate" placeholder="Sélectionnez la date">
+      <mat-datepicker-toggle matSuffix [for]="birthDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #birthDatePicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Date d'embauche</mat-label>
+      <input matInput [matDatepicker]="hireDatePicker" formControlName="hireDate" placeholder="Sélectionnez la date">
+      <mat-datepicker-toggle matSuffix [for]="hireDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #hireDatePicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Poste</mat-label>
+      <input matInput formControlName="position" placeholder="Entrez le poste">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Département</mat-label>
+      <input matInput formControlName="department" placeholder="Entrez le département">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="form-field-spacing">
+      <mat-label>Salaire</mat-label>
+      <input matInput formControlName="salary" placeholder="Entrez le salaire" type="number">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Statut d'emploi</mat-label>
+        <mat-select formControlName="employmentStatus">
+          <mat-option *ngFor="let status of employmentStatuses" [value]="status.value">
+            {{ status.viewValue }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancel()">Annuler</button>
+      <button mat-raised-button color="primary" type="submit">Ajouter</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,73 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [opened]="isOpen" class="custom-sidenav"
+    (mouseenter)="mouseEnterSidenav()" (mouseleave)="mouseLeaveSidenav()">
+    <div class="logo-container text-center">
+      <img src="assets/images/gop.png" alt="Logo" class="logo">
+    </div>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/dashboard">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/employements">
+        <mat-icon>people</mat-icon>
+        <span>Employés</span>
+      </a>
+
+      <a mat-list-item>
+        <mat-icon>work</mat-icon>
+        <span>Candidatures</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>attach_money</mat-icon>
+        <span>Paies</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>event</mat-icon>
+        <span>Formation</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>assessment</mat-icon>
+        <span>Performance</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>description</mat-icon>
+        <span>Documents</span>
+      </a>
+      <a mat-list-item >
+        <mat-icon>event</mat-icon>
+        <span>Congés</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>bar_chart</mat-icon>
+        <span>Rapports</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>settings</mat-icon>
+        <span>Paramètres</span>
+      </a>
+      <a mat-list-item href="#">
+        <mat-icon>account_circle</mat-icon>
+        <span>Profil</span>
+      </a>
+    </mat-nav-list>
+    <div class="footer">
+      <span>&copy; {{ currentYear }} Gestion Optimum</span>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (mouseenter)="mouseEnterButton()" (mouseleave)="mouseLeaveButton()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span><span class="sen">Gestion</span> <span class="guinar">Optimum</span></span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="/login">Login</a>
+      <a mat-button routerLink="/register">Register</a>
+    </mat-toolbar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

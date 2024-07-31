@@ -1,0 +1,36 @@
+.employe-container {
+  padding: 16px;
+}
+
+mat-card {
+  margin: 16px 0;
+}
+
+mat-table {
+  width: 100%;
+}
+
+button.mat-icon-button {
+  margin: 0 4px;
+}
+
+/* app.component.css */
+
+/* Style pour le bouton d'édition avec couleur primaire */
+.edit-button {
+    color: #3f51b5; /* Exemple de couleur primaire (bleu indigo) */
+  }
+
+  /* Style pour le bouton de suppression avec couleur danger */
+  .delete-button {
+    color: #f44336; /* Exemple de couleur de danger (rouge) */
+  }
+
+  /* Vous pouvez également ajouter un effet au survol si vous le souhaitez */
+  .edit-button:hover {
+    color: #303f9f; /* Couleur légèrement plus sombre au survol */
+  }
+
+  .delete-button:hover {
+    color: #c62828; /* Couleur légèrement plus sombre au survol */
+  }

@@ -1,0 +1,55 @@
+.logo-container {
+  text-align: center;
+  padding: 16px;
+}
+
+.logo {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sen {
+  color: red;
+}
+
+.guinar {
+  color: orange;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 9%;
+  background-color: #3f51b5; /* Couleur de fond du pied de page */
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 12px;
+}
+
+mat-toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+a.mat-button {
+  margin-left: 16px;
+  color: white;
+}
+
+a.mat-button:hover {
+  color: #ffeb3b; /* Changez la couleur au survol si nécessaire */
+}
+

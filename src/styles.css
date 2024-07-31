@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.example-container {
+    height: 100%;
+  }
+
+  mat-sidenav {
+    width: 200px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+
+
+/* styles.css */
+
+.custom-sidenav {
+  background-color: #3f51b5; /* Exemple de couleur primaire (indigo) */
+  color: white;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.custom-sidenav .logo {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-sidenav .logo:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-sidenav .mat-nav-list .mat-list-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px; /* Ajouter du padding pour rendre les liens plus jolis */
+  border-radius: 4px; /* Ajouter des coins arrondis pour un effet Material Design */
+}
+
+.custom-sidenav .mat-nav-list .mat-list-item:hover {
+  background-color: #303f9f; /* Couleur d'accentuation */
+}
+
+.custom-sidenav .mat-nav-list .mat-list-item mat-icon {
+  margin-right: 12px; /* Ajouter une marge entre l'icône et le texte */
+  font-size: 24px; /* Ajuster la taille des icônes pour qu'elles soient plus jolies */
+}
+
+.sen {
+  color: red;
+}
+
+.guinar {
+  color: orange;
+}
+
+/* styles.css */
+
+.custom-sidenav .mat-nav-list .mat-list-item {
+  color: white; /* Couleur de texte par défaut */
+  display: flex;
+  align-items: center;
+  padding: 8px 16px; /* Espacement interne */
+  border-radius: 4px; /* Coins arrondis */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour une animation fluide */
+}
+
+.custom-sidenav .mat-nav-list .mat-list-item:hover {
+  background-color: red; /* Couleur d'arrière-plan au survol */
+  color: white; /* Couleur du texte au survol */
+}
+
+.custom-sidenav .mat-nav-list .mat-list-item mat-icon {
+  margin-right: 12px; /* Marge entre l'icône et le texte */
+  font-size: 24px; /* Taille des icônes */
+}
+
+
+

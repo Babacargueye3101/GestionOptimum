@@ -1,0 +1,78 @@
+<div class="dashboard-container">
+    <mat-toolbar color="primary">
+      <span>Tableau de Bord</span>
+    </mat-toolbar>
+
+    <div class="dashboard-grid">
+      <!-- Card 1: Summary -->
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Résumé</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="summary">
+            <mat-icon class="icon">trending_up</mat-icon>
+            <div class="summary-content">
+              <h2>1,234</h2>
+              <p>Employés Actifs</p>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card 2: Performance Overview -->
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Vue d'ensemble des Performances</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- You can integrate charts or graphs here -->
+          <div class="chart-placeholder">
+            <p>Graphique des performances ici</p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card 3: Latest Activities -->
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Dernières Activités</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>
+              <mat-icon>event</mat-icon>
+              <span>Réunion avec le département de recrutement</span>
+              <span class="timestamp">Aujourd'hui</span>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>assignment</mat-icon>
+              <span>Formation de l'équipe RH</span>
+              <span class="timestamp">Hier</span>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Card 4: Notifications -->
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Notifications</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>
+              <mat-icon>notifications</mat-icon>
+              <span>Nouvelle demande de congé reçue</span>
+              <span class="timestamp">5 minutes ago</span>
+            </mat-list-item>
+            <mat-list-item>
+              <mat-icon>notifications_active</mat-icon>
+              <span>Rapport de performance disponible</span>
+              <span class="timestamp">30 minutes ago</span>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
